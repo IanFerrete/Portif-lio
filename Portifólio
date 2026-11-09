@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ian Ferrete Azevedo | Portfólio Profissional</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Estilos Personalizados e Animações -->
+    <style>
+        .hero-section {
+            background: linear-gradient(135deg, rgba(13, 110, 253, 0.1), rgba(108, 117, 125, 0.1));
+            padding: 100px 0;
+        }
+        .project-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+        }
+        .skill-badge {
+            transition: all 0.2s ease-in-out;
+        }
+        .skill-badge:hover {
+            transform: scale(1.05);
+        }
+        section {
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- MENU DE NAVEGAÇÃO FUNCIONAL -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#perfil">
+                <i class="bi bi-code-slash text-primary me-2"></i>Ian Ferrete
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="#perfil">Perfil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#formacao">Formação</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                    <!-- Recurso Novo: Botão Dark/Light Mode -->
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <button class="btn btn-outline-secondary btn-sm rounded-pill px-3" id="btn-theme" title="Alternar Tema">
+                            <i class="bi bi-moon-stars-fill" id="theme-icon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SEÇÃO DE PERFIL -->
+    <header id="perfil" class="hero-section text-center text-lg-start">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7 mb-4 mb-lg-0">
+                    <span class="badge bg-primary-subtle text-primary mb-3 px-3 py-2 rounded-pill fw-semibold">Engenharia & Tecnologia</span>
+                    <h1 class="display-4 fw-bold mb-3">Olá, sou o Ian Ferrete Azevedo</h1>
+                    <p class="lead text-muted mb-4">Estudante de Engenharia Aeroespacial e Ciência e Tecnologia na UFABC, programador em sistemas embarcados e automação, além de educador em disciplinas técnicas e musicais.</p>
+                    <div class="d-flex justify-content-center justify-content-lg-start gap-3">
+                        <a href="#projetos" class="btn btn-primary px-4 py-2 rounded-pill">Ver Projetos</a>
+                        <a href="#contato" class="btn btn-outline-primary px-4 py-2 rounded-pill">Entre em Contato</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center">
+                    <div class="p-4 bg-body border rounded-4 shadow-sm d-inline-block">
+                        <i class="bi bi-person-workspace text-primary" style="font-size: 8rem;"></i>
+                        <p class="text-muted mt-2 mb-0 small">Santo André, SP — Brasil</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SEÇÃO FORMAÇÃO (Nova Seção) -->
+    <section id="formacao" class="bg-body-secondary bg-opacity-50">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Formação Acadêmica & Técnica</h2>
+                <p class="text-muted">Minha trajetória em constante evolução</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm p-4">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-mortarboard-fill text-primary fs-3 me-3"></i>
+                                <h3 class="h5 mb-0 fw-bold">Ensino Superior (UFABC)</h3>
+                            </div>
+                            <ul class="list-unstyled text-muted mb-0">
+                                <li class="mb-2"><strong>Engenharia Aeroespacial</strong> (2024 – 2028)</li>
+                                <li><strong>Bacharelado em Ciência e Tecnologia - BC&T</strong> (2024 – 2026)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm p-4">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-tools text-primary fs-3 me-3"></i>
+                                <h3 class="h5 mb-0 fw-bold">Técnico & Profissional</h3>
+                            </div>
+                            <ul class="list-unstyled text-muted mb-0">
+                                <li class="mb-2">Técnico em Mecatrônica (2025)</li>
+                                <li class="mb-2">Técnico em Manufatura Automotiva (2024)</li>
+                                <li>Técnico em Química (2024)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DE PROJETOS -->
+    <section id="projetos">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Meus Projetos</h2>
+                <p class="text-muted">Alguns dos principais desenvolvimentos em hardware, automação e software</p>
+            </div>
+            <div class="row g-4">
+                <!-- Projeto 1 -->
+                <div class="col-md-4">
+                    <div class="card project-card h-100 border-0 shadow-sm">
+                        <div class="card-body d-flex flex-column">
+                            <div class="mb-3 text-primary"><i class="bi bi-cpu fs-2"></i></div>
+                            <h3 class="h5 fw-bold card-title">Órtese Gamificada AVC</h3>
+                            <p class="card-text text-muted flex-grow-1">Desenvolvimento de luva robótica de reabilitação com Arduino, sensores FSR/Flex, servomotor MG996R e interface interativa em Python.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-secondary-subtle text-secondary me-1">Arduino</span>
+                                <span class="badge bg-secondary-subtle text-secondary me-1">Python</span>
+                                <span class="badge bg-secondary-subtle text-secondary">C++</span>
+                            </div>
+                            <a href="https://github.com" target="_blank" class="btn btn-outline-primary btn-sm mt-auto">Ver no GitHub <i class="bi bi-github ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Projeto 2 -->
+                <div class="col-md-4">
+                    <div class="card project-card h-100 border-0 shadow-sm">
+                        <div class="card-body d-flex flex-column">
+                            <div class="mb-3 text-primary"><i class="bi bi-water fs-2"></i></div>
+                            <h3 class="h5 fw-bold card-title">Robô Aquático Autônomo</h3>
+                            <p class="card-text text-muted flex-grow-1">Projeto de robô solar para coleta de detritos flutuantes em cursos d'água urbanos, equipado com sensores de qualidade de água em tempo real.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-secondary-subtle text-secondary me-1">Rust</span>
+                                <span class="badge bg-secondary-subtle text-secondary me-1">OpenSCAD</span>
+                                <span class="badge bg-secondary-subtle text-secondary">IoT</span>
+                            </div>
+                            <a href="https://github.com" target="_blank" class="btn btn-outline-primary btn-sm mt-auto">Ver no GitHub <i class="bi bi-github ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Projeto 3 -->
+                <div class="col-md-4">
+                    <div class="card project-card h-100 border-0 shadow-sm">
+                        <div class="card-body d-flex flex-column">
+                            <div class="mb-3 text-primary"><i class="bi bi-graph-up-arrow fs-2"></i></div>
+                            <h3 class="h5 fw-bold card-title">Espectrofotometria Mobile</h3>
+                            <p class="card-text text-muted flex-grow-1">Metodologia experimental baseada em smartphone para análise de concentração química utilizando software colorimétrico.</p>
+                            <div class="mb-3">
+                                <span class="badge bg-secondary-subtle text-secondary me-1">Python</span>
+                                <span class="badge bg-secondary-subtle text-secondary">Phyphox</span>
+                            </div>
+                            <a href="https://github.com" target="_blank" class="btn btn-outline-primary btn-sm mt-auto">Ver no GitHub <i class="bi bi-github ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO HABILIDADES -->
+    <section id="habilidades" class="bg-body-secondary bg-opacity-50">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Tecnologias & Competências</h2>
+                <p class="text-muted">Ferramentas e linguagens que utilizo no dia a dia</p>
+            </div>
+            <div class="row justify-content-center g-3 text-center">
+                <div class="col-6 col-md-3">
+                    <div class="p-3 bg-body rounded-3 shadow-sm skill-badge">
+                        <i class="bi bi-code text-primary fs-3 mb-2 d-block"></i>
+                        <h6 class="fw-bold mb-1">Rust & C++</h6>
+                        <small class="text-muted">Sistemas & Embarcados</small>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="p-3 bg-body rounded-3 shadow-sm skill-badge">
+                        <i class="bi bi-cpu text-primary fs-3 mb-2 d-block"></i>
+                        <h6 class="fw-bold mb-1">Arduino & Hardware</h6>
+                        <small class="text-muted">Prototipagem</small>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="p-3 bg-body rounded-3 shadow-sm skill-badge">
+                        <i class="bi bi-filetype-py text-primary fs-3 mb-2 d-block"></i>
+                        <h6 class="fw-bold mb-1">Python & Java</h6>
+                        <small class="text-muted">Scripting & Análise</small>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="p-3 bg-body rounded-3 shadow-sm skill-badge">
+                        <i class="bi bi-git text-primary fs-3 mb-2 d-block"></i>
+                        <h6 class="fw-bold mb-1">Git & VS Code</h6>
+                        <small class="text-muted">Controle de Versão</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DE CONTATO -->
+    <section id="contato">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="fw-bold mb-3">Vamos Conversar?</h2>
+                    <p class="text-muted mb-4">Tem interesse em parcerias acadêmicas, projetos de engenharia ou aulas particulares? Entre em contato!</p>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="mailto:ian.ferrete@aluno.ufabc.edu.br" class="btn btn-primary px-4 py-2 rounded-pill"><i class="bi bi-envelope-fill me-2"></i>E-mail</a>
+                        <a href="https://github.com" target="_blank" class="btn btn-outline-dark px-4 py-2 rounded-pill"><i class="bi bi-github me-2"></i>GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer class="bg-body border-top py-4 text-center text-muted">
+        <div class="container">
+            <small>&copy; 2026 Ian Ferrete Azevedo. Desenvolvido com HTML, CSS e Bootstrap 5.</small>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Script do Recurso Novo (Dark/Light Mode Dinâmico) -->
+    <script>
+        const themeBtn = document.getElementById('btn-theme');
+        const themeIcon = document.getElementById('theme-icon');
+        const htmlElement = document.documentElement;
+
+        themeBtn.addEventListener('click', () => {
+            const currentTheme = htmlElement.getAttribute('data-bs-theme');
+            if (currentTheme === 'dark') {
+                htmlElement.setAttribute('data-bs-theme', 'light');
+                themeIcon.classList.replace('bi-moon-stars-fill', 'bi-sun-fill');
+            } else {
+                htmlElement.setAttribute('data-bs-theme', 'dark');
+                themeIcon.classList.replace('bi-sun-fill', 'bi-moon-stars-fill');
+            }
+        });
+    </script>
+</body>
+</html>
